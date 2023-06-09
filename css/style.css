@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* @import url('reset.css'); */
+
+/* 구글폰트 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* 구글폰트 적용 */
+    font-size: 14px;
+
+    /* 상단 배경이미지 부분 */
+    background: url(../image/headerBG.png) no-repeat center top;
+    background-size: 100% 181px;
+}
+
+.container {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* 상단 로고 부분 */
+.main_logo {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    width: 160px;
+    height: 160px;
+    border: 10px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.main_logo_bg {
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.main_logo img {
+    margin-top: 20px;
+}
+
+/* 입력 폼 부분 */
+.form_box {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.item {
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.item input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background: #F4F5F7;
+    padding: 10px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    color: #999999;
+    text-transform: capitalize;
+    outline: none;
+    transition: 0.3s;
+}
+
+.item input:focus {
+    border: 1px solid #2D9CDB;
+    box-shadow: 0 0 5px #2D9CDB;
+}
+
+.item input:focus+.font_icon {
+    color: #2D9CDB;
+}
+
+.item input:focus::placeholder {
+    visibility: hidden;
+}
+
+.item .font_icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #999999;
+    font-size: 14px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.sign_btn {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background: #2D9CDB;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    line-height: 60px;
+}
+
+/* 패스워드 찾기 부분 */
+.text_fp {
+    margin: 30px 0 80px 0;
+    text-align: center;
+}
+
+.text_fp a {
+    color: #2D9CDB;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+/* 하단 푸터 부분 */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #404A5B;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: #67BCED;
+}

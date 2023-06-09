@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>figma index</title>
-    <!-- 폰트어썸 연결 -->
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/forget.css">
 </head>
 
 <body>
@@ -18,34 +17,30 @@
             <img src="./image/logo.png" width="120px" height="120px" alt="logo">
         </div>
     </div>
+    <p class="main_text">Recover Password</p>
+
     <!-- 로그인 입력 박스 -->
     <div class="form_box container">
         <form>
             <div class="item">
-                <input type="email" placeholder="email">
-                <span class="font_icon"><i class="fa-regular fa-envelope-open"></i>
-                </span>
-            </div>
-            <div class="item">
-                <input type="password" placeholder="password">
+                <input type="email" placeholder="Email Address">
                 <span class="font_icon"><i class="fa-sharp fa-solid fa-lock"></i>
                 </span>
             </div>
-            <div>
-                <a href="./dashboard.html">
-                    <input value="sign in" class="sign_btn">
-                </a>
-            </div>
+            <a href="#">
+                <div>
+                    <input type="submit" value="RESET PASSWORD" class="sign_btn">
+                </div>
+            </a>
+
+
         </form>
     </div>
-    <!-- 패스워드 찾기 링크 -->
-    <div class="text_fp">
-        <p><a href="./forget.html">forget password</a></p>
-    </div>
+
     <!-- 하단 푸터 박스 및 계정만들기 링크 -->
     <footer>
         <div>
-            <p>Don't have an account? &nbsp;&nbsp;<a href="./createAccount.html">Create one now</a></p>
+            <p><a href="./index.html">back to Login</a></p>
         </div>
     </footer>
 </body>
